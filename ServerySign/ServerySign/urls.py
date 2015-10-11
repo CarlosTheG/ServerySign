@@ -18,7 +18,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.http import HttpResponse, HttpResponseRedirect
 from bs4 import BeautifulSoup
-import urllib2
 from webview import views
 
 urlpatterns = [

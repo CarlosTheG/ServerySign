@@ -1,6 +1,8 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
-from app.models import ServeryMenu
+from bs4 import BeautifulSoup
+import urllib2
+#from app.models import ServeryMenu
 
 # Create your views here.
 
