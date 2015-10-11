@@ -19,31 +19,10 @@ from django.contrib import admin
 from django.http import HttpResponse, HttpResponseRedirect
 from bs4 import BeautifulSoup
 import urllib2
-#from webview.views import simplePrint
-
-def simplePrint(request):
-    """
-    A very simple page that just renders to test url routing
-    """
-    foodList = getServeryData()
-    foodString = "<br />".join(foodList)
-    return HttpResponse(foodString)
-
-def getServeryData():
-    response = urllib2.urlopen('http://dining.rice.edu')
-    html = response.read()
-    soup = BeautifulSoup(html, 'html.parser')
-    foodList = []
-    for servery in soup.findAll("div", class_="servery-title"):
-    	if (servery.get_text() == "\nWest\n"):
-    		unorderedList = servery.next_sibling.next_sibling
-    		for item in unorderedList.findAll('li'):
-    			foodList.append(item.get_text())
-    foodList.pop(-1)
-    return foodList 
+from webview import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'webview/$', simplePrint),
+    url(r'webview/$', views.simplePrint),
 ]
 
