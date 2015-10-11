@@ -1,4 +1,3 @@
-
 """ServerySign URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,12 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from django.http import HttpResponse, HttpResponseRedirect
-from bs4 import BeautifulSoup
 from webview import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'webview/$', views.simplePrint),
+    url(r'webview/$', views.simplePrint)
 ]
-
