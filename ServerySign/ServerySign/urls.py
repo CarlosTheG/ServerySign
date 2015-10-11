@@ -17,13 +17,29 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.http import HttpResponse, HttpResponseRedirect
+from bs4 import BeautifulSoup
+import urllib2
 #from webview.views import simplePrint
 
 def simplePrint(request):
     """
     A very simple page that just renders to test url routing
     """
-    return HttpResponse("Hello")
+    foodList = getServeryData()
+    foodstr = ''
+    for food in foodList:
+        foodstr = foodstr+food
+    return HttpResponse(foodstr)
+
+def getServeryData():
+    response = urllib2.urlopen('http://dining.rice.edu')
+    html = response.read()
+    soup = BeautifulSoup(html, 'html.parser')
+    foodList = []
+    for item in soup.findAll("div", class_="servery-title"):
+        foodList.append(item.get_text())
+        foodList.append(item.next_sibling.next_sibling.get_text())
+    return foodList
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
