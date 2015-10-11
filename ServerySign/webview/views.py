@@ -23,6 +23,7 @@ def getServeryData():
     	if (servery.get_text() == "\nWest\n"):
     		unorderedList = servery.next_sibling.next_sibling
     		for item in unorderedList.findAll('li'):
-    			foodList.append(item.get_text())
+    			foodList.append(item.get_text().title())
+
     foodList.pop(-1)
     return foodList 
