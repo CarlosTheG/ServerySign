@@ -18,5 +18,8 @@
 <br>
 <br>
 <h1 align='center'><font size = '100'>Today's Associates</font></h1>
+{% for associate in associates %}
+	<p>{{associate.name}}</p>
+{% endfor %}
 </p>
 {% endblock %}
