@@ -1,0 +1,197 @@
+#login-info {
+    float:right;
+}
+
+.button-pic {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+}
+
+.labels {
+    font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.legible {
+  font-size: 26px;
+}
+
+.input-group > .form-control {
+    width: 100%
+}
+
+.top-bar {
+    vertical-align: center;
+
+}
+
+.top-bar img {
+    width: 100%;
+    height: auto;
+}
+
+.top-bar span {
+    float: right;
+
+}
+
+.top-bar a {
+    float: right;
+    margin-right: 0%;
+}
+
+
+.about-top-bar {
+    vertical-align: center;
+
+}
+
+.about-top-bar img {
+    width: 100%;
+    height: auto;
+}
+
+.btn.btn-no-padding {
+    padding: 0px;
+}
+
+
+
+
+
+.btn.btn-skinny{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.btn.btn-tight{
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.table.trans-table tr{
+    font-size: 16px;
+}
+
+#btn-balance-add.btn {
+    padding: 0px 0px;
+}
+
+.panel-body.parts-panel {
+    background:#EEEEEE;
+}
+
+.panel-body.new-part-panel {
+    background:#F4F4F4;
+}
+
+body{
+    max-width: 95%;
+    margin: 0 auto 15% !important;
+    float: top !important;
+}
+
+@media
+only screen and (max-device-width: 480px){
+      /* some CSS here */
+    .non-mobile {
+        display:none;
+    }
+
+}
+
+.form-horizontal .control-label{
+/* text-align:right; */
+text-align:left;
+}
+
+
+#footercontainer {
+    width: 95%;
+    height: 5%;
+    position: fixed;
+    bottom: 0;
+    background: #F0F0F0;
+}
+
+#footer {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#footer a:link {
+    color: #171717;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #171717;
+    text-decoration: none;
+    border-bottom: 2px solid #171717;
+}
+
+#footer a:visited {
+    color: #171717;
+    text-decoration: none;
+}
+
+#footer a:active {
+    color: #171717;
+    text-decoration: none;
+}
+
+.footer {
+    font-size: 8px;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+p.order-submitted-text {
+    color: #00AA00;
+}
+
+p.order-submitted-link a{
+    color: #66CC99;
+}
+
+.assign-parts-delete-button {
+    margin-top: 23px;
+}
+
+.assign-parts-category-field select{
+    background-color: #000000 !important;
+}
+
+.btn.btn-fat {
+    width: 100%;
+}
+
+.panel-body.panel-body-center {
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel-body.panel-body-blue {
+    background-color: #337ab7;
+}
+
+.form-group.form-group-center {
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+.panel-heading.panel-heading-tight h3{
+    margin: auto;
+}
+
+

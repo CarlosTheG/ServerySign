@@ -13,10 +13,10 @@ def simplePrint(request):
 
 def index(request):
     """
+    Gets the menu for the day and sends it to index.html
     """
     foodList = models.getServeryData()
     foodString = "<br />".join(foodList)
     t = loader.get_template("app/index.html")
     c = {'foodList': foodList,'foodString':foodString}
     return render(request, "app/index.html", c)
-    #return HttpResponse(t.render(c))
