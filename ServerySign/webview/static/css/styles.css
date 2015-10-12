@@ -2,6 +2,14 @@
     float:right;
 }
 
+.container h1 {
+    color:#fff;
+    font-size:100px;
+    position:fixed;
+    top: 30px;
+    right: 5px;
+}
+
 .button-pic {
   width: 25px;
   height: 25px;
@@ -99,7 +107,7 @@ body{
 
 @media
 only screen and (max-device-width: 480px){
-      /* some CSS here */
+      /* some CSS here 
     .non-mobile {
         display:none;
     }
@@ -192,6 +200,6 @@ p.order-submitted-link a{
 
 .panel-heading.panel-heading-tight h3{
     margin: auto;
-}
+}*/
 
 

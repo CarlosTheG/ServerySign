@@ -23,6 +23,6 @@ def index(request):
     c = {
     	'foodList': foodList,
     	'foodString': foodString,
-    	'associates': associates
+    	'associates': associates,
 	}
     return render(request, "app/index.html", c)

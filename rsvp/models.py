@@ -23,6 +23,7 @@ class Associate(models.Model):
         """
         dates = json.loads(self.rsvp_dates)
         today = datetime.date.today()
+        print today
         for date in dates:
             rsvp_date = datetime.datetime.strptime(date, '%Y-%m-%d').date()
             if rsvp_date == today:
