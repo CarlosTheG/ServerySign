@@ -53,21 +53,25 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'ServerySign.urls'
 
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
+# TEMPLATES = [
+#     {
+#         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+#         'DIRS': [],
+#         'APP_DIRS': True,
+#         'OPTIONS': {
+#             'context_processors': [
+#                 'django.template.context_processors.debug',
+#                 'django.template.context_processors.request',
+#                 'django.contrib.auth.context_processors.auth',
+#                 'django.contrib.messages.context_processors.messages',
+#             ],
+#         },
+#     },
+# ]
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR,'ServerySign/webview/templates'),
+                 os.path.join(BASE_DIR, 'ServerySign/webview/templates/app')
+                 )
 
 WSGI_APPLICATION = 'ServerySign.wsgi.application'
 

@@ -19,5 +19,5 @@ from webview import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'webview/$', views.simplePrint)
+    url(r'webview/$', views.index)
 ]
